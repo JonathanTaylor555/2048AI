@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="Project.css">
+</head>
+
+<body>
+<div class="container">
+  <div class="heading">
+    <h1 class="title">2048</h1>
+    <div class="score-container">0</div>
+  </div>
+  <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+  <button id="AIButton">Start AI</button>
+  <button id="DebugButton">Start Debug Mode</button>
+  <h3>Delay between AI moves (too low can freeze your browser!)</h3><input type="number" id="Speed" min="10" max="20000" value="1000">
+  <div class="game-container">
+    <div class="game-message">
+      <p></p>
+      <div class="lower">
+        <a class="retry-button">Try again</a>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-row">
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+      </div>
+    </div>
+
+    <div class="tile-container">
+
+    </div>
+  </div>
+
+  <p class="game-explanation">
+    <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong> Press "Start AI" to let the AI try
+    to solve it!
+  </p>
+  <hr>
+</div>
+
+</body>
+<script type="text/javascript" src="Hammer.js"></script>
+
+<script type="text/javascript" src="Game.js"></script>
+<script type="text/javascript" src="Project.js"></script>
+</html>
